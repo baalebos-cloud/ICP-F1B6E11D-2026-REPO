@@ -1,0 +1,32 @@
+# =============================================================================
+# Cron Job Configuration — DevOps Automation
+# Project: Shell Scripting Automation | InternCareerPath DevOps Internship
+# =============================================================================
+#
+# Install: crontab -e  (then paste the entries below)
+# View:    crontab -l
+# Format:  MIN HOUR DOM MON DOW COMMAND
+#          ┬   ┬    ┬   ┬   ┬
+#          │   │    │   │   └── Day of week (0=Sun, 6=Sat)
+#          │   │    │   └────── Month (1–12)
+#          │   │    └────────── Day of month (1–31)
+#          │   └─────────────── Hour (0–23)
+#          └─────────────────── Minute (0–59)
+# =============================================================================
+
+# Environment
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=""
+
+# ── Backup: every day at 2:00 AM ─────────────────────────────────────────────
+0 2 * * * /path/to/repo/Week2/scripts/backup.sh >> /var/log/devops-backup.log 2>&1
+
+# ── Cleanup: every Sunday at 3:30 AM ─────────────────────────────────────────
+30 3 * * 0 /path/to/repo/Week2/scripts/cleanup.sh >> /var/log/devops-cleanup.log 2>&1
+
+# ── Health check: every 5 minutes ─────────────────────────────────────────────
+*/5 * * * * /path/to/repo/Week3/scripts/health-check.sh >> /var/log/devops-health.log 2>&1
+
+# ── Deploy (manual trigger via cron — e.g. nightly auto-deploy) ───────────────
+# 0 1 * * 1-5 /path/to/repo/Week3/scripts/deploy.sh >> /var/log/devops-deploy.log 2>&1
