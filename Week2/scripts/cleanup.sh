@@ -12,6 +12,7 @@ LOG_DIRS=(
   "/tmp"
   "/var/tmp"
 )
+export LOG_DIRS
 LOG_RETENTION_DAYS="${LOG_RETENTION_DAYS:-14}"
 TEMP_RETENTION_HOURS="${TEMP_RETENTION_HOURS:-24}"
 MAX_LOG_SIZE_MB="${MAX_LOG_SIZE_MB:-100}"
@@ -35,7 +36,11 @@ safe_remove() {
   if [[ "$DRY_RUN" == "true" ]]; then
     dry "Would remove: $target"
   else
-    rm -rf "$target" && success "Removed: $target" || warn "Could not remove: $target"
+    if rm -rf "$target"; then
+      success "Removed: $target"
+    else
+      warn "Could not remove: $target"
+    fi
   fi
 }
 

@@ -116,7 +116,7 @@ rollback() {
   step "Rolling back to previous release"
 
   local previous
-  previous=$(ls -t "$RELEASES_DIR" 2>/dev/null | sed -n '2p')
+  previous=$(find "$RELEASES_DIR" -maxdepth 1 -mindepth 1 -type d -printf '%T@ %f\n' 2>/dev/null | sort -rn | awk 'NR==2{print $2}')
 
   if [[ -z "$previous" ]]; then
     error "No previous release to roll back to."
@@ -136,7 +136,8 @@ clean_old_releases() {
   count=$(ls -1 "$RELEASES_DIR" 2>/dev/null | wc -l)
 
   if (( count > MAX_ROLLBACK_RELEASES )); then
-    ls -t "$RELEASES_DIR" | tail -n +"$(( MAX_ROLLBACK_RELEASES + 1 ))" | \
+    find "$RELEASES_DIR" -maxdepth 1 -mindepth 1 -type d -printf '%T@ %f\n' | \
+      sort -rn | awk -v keep="$MAX_ROLLBACK_RELEASES" 'NR>keep{print $2}' | \
       xargs -I{} rm -rf "${RELEASES_DIR}/{}"
     success "Cleaned old releases."
   else
