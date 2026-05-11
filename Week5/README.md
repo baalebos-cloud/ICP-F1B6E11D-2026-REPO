@@ -1,4 +1,6 @@
-# Week 5 — CI/CD Pipeline: Complete ✅
+# Week 5 — Project 2 Completion: CI/CD Pipeline ✅
+
+**Portal ID:** ICP-F1B6E11D-2026 | **Project Bank:** #3 — CI/CD Pipeline
 
 ## Project 2 Deliverables
 
@@ -7,7 +9,7 @@
 | React dashboard app (`/dashboard`) | ✅ |
 | CI workflow — lint + build on PRs | ✅ |
 | CD workflow — auto-deploy to Vercel | ✅ |
-| Pipeline runbook | ✅ |
+| Pipeline runbook | ✅ See [`runbook.md`](./runbook.md) |
 
 ## Pipeline Architecture
 

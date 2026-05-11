@@ -36,7 +36,7 @@ node -v   # v20.x.x
 ## 4. Clone Repository
 
 ```bash
-git clone git@github.com:<username>/REPO-86C1D410.git
+git clone git@github.com:baalebos-cloud/REPO-86C1D410.git
 cd REPO-86C1D410
 ```
 

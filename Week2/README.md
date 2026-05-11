@@ -1,6 +1,8 @@
-# Week 2 — Shell Scripting: Initial Development
+# Week 2 — Project 1 Development: Shell Scripting
 
-## Progress
+**Portal ID:** ICP-F1B6E11D-2026 | **Project Bank:** #1 — Shell Scripting Automation
+
+## Overview
 
 This week focused on building the core automation scripts: backup and cleanup.
 

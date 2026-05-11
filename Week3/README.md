@@ -1,4 +1,6 @@
-# Week 3 — Shell Scripting: Complete ✅
+# Week 3 — Project 1 Completion: Shell Scripting ✅
+
+**Portal ID:** ICP-F1B6E11D-2026 | **Project Bank:** #1 — Shell Scripting Automation
 
 ## Project 1 Deliverables
 

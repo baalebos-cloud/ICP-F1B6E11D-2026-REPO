@@ -1,8 +1,12 @@
-# Week 4 — CI/CD Pipeline: Development
+# Week 4 — Project 2 Development: CI/CD Pipeline
 
-## Progress
+**Portal ID:** ICP-F1B6E11D-2026 | **Project Bank:** #3 — CI/CD Pipeline
 
-This week focused on building the React dashboard app and structuring the GitHub Actions workflows.
+## Overview
+
+This week focused on building the React dashboard app and structuring the GitHub Actions CI/CD workflows — the development phase of Project 2.
+
+---
 
 ## Work Done
 
@@ -21,9 +25,11 @@ Built a production-ready DevOps monitoring dashboard with three pages:
 ### GitHub Actions Workflows
 
 | File | Trigger | Purpose |
-|------|---------|---------|
+|------|---------|---------| 
 | `ci.yml` | PR to `main` | Lint + Build validation |
 | `deploy.yml` | Push to `main` | Deploy to Vercel production |
+
+---
 
 ## Running Locally
 
@@ -34,8 +40,19 @@ npm run dev
 # Open http://localhost:5173
 ```
 
-## Next Steps (Week 5)
+---
 
-- Add Vercel secrets to GitHub
-- Trigger first deployment
-- Document the full pipeline runbook
+## Technical Notes
+
+- Dashboard uses mock data with `setInterval` to simulate live metric updates
+- CI workflow runs ESLint with `--max-warnings 0` — zero tolerance for lint warnings
+- CD workflow uses Vercel CLI (`vercel pull` → `vercel build` → `vercel deploy --prebuilt`) for reliable production deploys
+- Both workflows use `actions/setup-node@v4` with npm cache keyed to `package-lock.json`
+
+---
+
+## Week 5 Completion
+
+- ✅ Added Vercel secrets to GitHub (`VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`)
+- ✅ Triggered first deployment via CD workflow
+- ✅ Documented the full pipeline runbook — see [`Week5/runbook.md`](../Week5/runbook.md)
