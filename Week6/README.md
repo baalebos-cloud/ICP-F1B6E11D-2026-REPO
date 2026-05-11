@@ -71,7 +71,7 @@ Pull Request  →  Lint (ESLint)  →  Build (Vite)  →  ✅ PR approved
 Merge to main →  Install  →  Build  →  Vercel Deploy  →  🌐 Live
 ```
 
-**Live Dashboard:** _Add Vercel URL after first deploy_
+**Live Dashboard:** [https://icp-f1-b6-e11-d-2026-repo.vercel.app](https://icp-f1-b6-e11-d-2026-repo.vercel.app)
 
 **Runbook:** [Week5/runbook.md](../Week5/runbook.md)
 
@@ -107,7 +107,7 @@ Merge to main →  Install  →  Build  →  Vercel Deploy  →  🌐 Live
 ## Repository Links
 
 - **GitHub:** [https://github.com/baalebos-cloud/REPO-86C1D410](https://github.com/baalebos-cloud/REPO-86C1D410)
-- **Live Dashboard:** _Add Vercel URL after first deploy_
+- **Live Dashboard:** [https://icp-f1-b6-e11-d-2026-repo.vercel.app](https://icp-f1-b6-e11-d-2026-repo.vercel.app)
 
 ---
 

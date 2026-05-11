@@ -65,7 +65,7 @@ REPO-86C1D410/
 
 ## Live Dashboard
 
-> _Deploy to Vercel and add your URL here. See [Week5/README.md](./Week5/README.md) for setup steps._
+> **[https://icp-f1-b6-e11-d-2026-repo.vercel.app](https://icp-f1-b6-e11-d-2026-repo.vercel.app)**
 
 ---
 
