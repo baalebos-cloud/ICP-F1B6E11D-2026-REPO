@@ -2,7 +2,7 @@
 
 **Intern:** baalebos-cloud  
 **Portal ID:** ICP-F1B6E11D-2026  
-**Repo ID:** REPO-86C1D410  
+**Repo ID:** ICP-F1B6E11D-2026-REPO  
 **Program:** DevOps Engineering Self-Learning Internship — InternCareerPath
 
 ---
@@ -23,7 +23,7 @@ Over 6 weeks, two production-quality DevOps projects were independently research
 | Reproducible automation | ✅ All scripts are idempotent and env-var configurable |
 | Proper documentation and runbooks | ✅ Runbooks in Week3 and Week5 |
 | Active participation across 6 weeks | ✅ Deliverables in every week folder |
-| Single GitHub repository | ✅ REPO-86C1D410 |
+| Single GitHub repository | ✅ ICP-F1B6E11D-2026-REPO |
 | Separate folders per week | ✅ Week1 through Week6 |
 
 ---
@@ -106,7 +106,7 @@ Merge to main →  Install  →  Build  →  Vercel Deploy  →  🌐 Live
 
 ## Repository Links
 
-- **GitHub:** [https://github.com/baalebos-cloud/REPO-86C1D410](https://github.com/baalebos-cloud/REPO-86C1D410)
+- **GitHub:** [https://github.com/baalebos-cloud/ICP-F1B6E11D-2026-REPO](https://github.com/baalebos-cloud/ICP-F1B6E11D-2026-REPO)
 - **Live Dashboard:** [https://icp-f1-b6-e11-d-2026-repo.vercel.app](https://icp-f1-b6-e11-d-2026-repo.vercel.app)
 
 ---

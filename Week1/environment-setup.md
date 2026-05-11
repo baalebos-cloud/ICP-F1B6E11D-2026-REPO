@@ -36,8 +36,8 @@ node -v   # v20.x.x
 ## 4. Clone Repository
 
 ```bash
-git clone git@github.com:baalebos-cloud/REPO-86C1D410.git
-cd REPO-86C1D410
+git clone git@github.com:baalebos-cloud/ICP-F1B6E11D-2026-REPO.git
+cd ICP-F1B6E11D-2026-REPO
 ```
 
 ## 5. Vercel CLI

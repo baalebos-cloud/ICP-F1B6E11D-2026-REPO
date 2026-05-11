@@ -3,10 +3,10 @@
 **Organization:** InternCareerPath  
 **Program:** DevOps Engineering Self-Learning Internship  
 **Portal ID:** ICP-F1B6E11D-2026  
-**Repo ID:** REPO-86C1D410  
+**Repo ID:** ICP-F1B6E11D-2026-REPO  
 **Intern:** baalebos-cloud  
 **Duration:** 6 Weeks | Project-Based  
-**GitHub:** [github.com/baalebos-cloud/REPO-86C1D410](https://github.com/baalebos-cloud/REPO-86C1D410)
+**GitHub:** [github.com/baalebos-cloud/ICP-F1B6E11D-2026-REPO](https://github.com/baalebos-cloud/ICP-F1B6E11D-2026-REPO)
 
 ---
 
@@ -22,7 +22,7 @@
 ## Repository Structure
 
 ```
-REPO-86C1D410/
+ICP-F1B6E11D-2026-REPO/
 ├── .github/
 │   └── workflows/
 │       ├── ci.yml          # CI — lint + build on pull requests
@@ -73,8 +73,8 @@ REPO-86C1D410/
 
 ```bash
 # Clone
-git clone https://github.com/baalebos-cloud/REPO-86C1D410.git
-cd REPO-86C1D410
+git clone https://github.com/baalebos-cloud/ICP-F1B6E11D-2026-REPO.git
+cd ICP-F1B6E11D-2026-REPO
 
 # Run dashboard locally
 cd dashboard
